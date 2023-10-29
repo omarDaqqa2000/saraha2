@@ -12,6 +12,7 @@ import userModel from "../../DB/Models/User.model.js";
         return res.json({message:"Invalid authorization"});
      }
 
+     
      const token = authorization.split(process.env.BEARERKEY)[1];
 
      if(!token){
